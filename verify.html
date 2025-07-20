@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Verify Employee | SheBright</title>
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(135deg, #f8f9fa 0%, #e3e6f3 100%);
+      min-height: 100vh;
+      font-family: 'Raleway', 'Roboto', sans-serif;
+    }
+    .verify-card {
+      max-width: 420px;
+      margin: 60px auto;
+      border-radius: 18px;
+      box-shadow: 0 8px 32px rgba(80, 80, 160, 0.10);
+      background: #fff;
+      padding: 2.5rem 2rem 2rem 2rem;
+    }
+    .verify-logo {
+      width: 60px;
+      margin-bottom: 12px;
+    }
+    .form-label {
+      font-weight: 500;
+      color: #5a189a;
+    }
+    .btn-primary {
+      background: #5a189a;
+      border: none;
+    }
+    .btn-primary:hover {
+      background: #7b2ff2;
+    }
+    #result {
+      margin-top: 1.5rem;
+    }
+  </style>
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="sitename">SheBright</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#Initiative">Initiative</a></li>
+          <li><a href="#Events">Events</a></li>
+          <li><a href="#team">Team</a></li>
+          <li class="dropdown"><a href="#"><span>Community</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="https://t.me/+e1HQkO3ao2FmMGQ1" target="_blank">Telegram ↗</a></li>
+              <li><a href="https://discord.gg/VzBN22adUC" target="_blank">Discord ↗</a></li>
+              <li class="dropdown"><a href="#"><span>Socials</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="https://www.linkedin.com/company/shebright" target="_blank">LinkedIn ↗</a></li>
+                  <li><a href="https://x.com/she_bright__" target="_blank">Twitter ↗</a></li>
+                  <li><a href="https://www.instagram.com/she__bright_/" target="_blank">Instagram ↗</a></li>
+                  <li><a href="https://github.com/OfficialSheBright" target="_blank">GitHub ↗</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a class="btn-getstarted" href="index.html#about">Get Started</a>
+
+    </div>
+  </header>
+</head>
+<body>
+  <div class="verify-card">
+    <div class="text-center">
+      <img src="assets/img/favicon.png" alt="SheBright Logo" class="verify-logo">
+      <h2 class="mb-2" style="color:#5a189a;">Employee Verification</h2>
+      <p class="text-muted mb-4">Enter the employee number to verify authenticity.</p>
+    </div>
+    <form id="verify-form" autocomplete="off">
+      <div class="mb-3">
+        <label for="empNumber" class="form-label">Employee Number</label>
+        <input type="text" class="form-control" id="empNumber" placeholder="e.g. EMP001" required>
+      </div>
+      <button type="submit" class="btn btn-primary w-100">Verify</button>
+    </form>
+    <div id="result"></div>
+    <div class="text-center mt-4">
+      <a href="index.html" class="text-decoration-none" style="color:#5a189a;"><i class="bi bi-arrow-left"></i> Back to Home</a>
+    </div>
+  </div>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/verify.js"></script>
+</body>
+</html>
