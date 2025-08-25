@@ -17,7 +17,7 @@ document.getElementById('verify-form').addEventListener('submit', function(e) {
       startDate: "2023-01-01",
       endDate: "",
       status: "Active"
-    }
+    },
     // Ghanshyam Singh
  {
       number: "GS2003-LP2025",
