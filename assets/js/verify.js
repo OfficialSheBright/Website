@@ -18,6 +18,15 @@ document.getElementById('verify-form').addEventListener('submit', function(e) {
       endDate: "",
       status: "Active"
     }
+    // Ghanshyam Singh
+ {
+      number: "GS2003-LP2025",
+      name: "Ghanshyam Singh",
+      designation: "Web Developer",
+      startDate: "2025-06-01",
+      endDate: "2025-09-01",
+      status: "Active"
+    }
   ];
   const emp = employees.find(e => e.number === empNumber);
   const resultDiv = document.getElementById('result');
